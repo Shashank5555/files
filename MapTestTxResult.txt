@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<OUTPUT>
+  <DATA>
+    <NAME>shashank</NAME>
+    <AMOUNT>1000</AMOUNT>
+    <INVOICE>INV001</INVOICE>
+    <DATE>20260120</DATE>
+    <CITY>Vizianagaram</CITY>
+  </DATA>
+  <DATA>
+    <NAME>mahesh</NAME>
+    <AMOUNT>400</AMOUNT>
+    <INVOICE>INV002</INVOICE>
+    <DATE>20250506</DATE>
+    <CITY>Vizag</CITY>
+  </DATA>
+  <DATA>
+    <NAME>sai</NAME>
+    <AMOUNT>3200</AMOUNT>
+    <INVOICE>INV003</INVOICE>
+    <DATE>20260122</DATE>
+    <CITY>Srikakulam</CITY>
+  </DATA>
+</OUTPUT>

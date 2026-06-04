@@ -1,0 +1,88 @@
+  Input Standards Association                                                                       Output Standards Association                                                                        
+                                                                                                                                                                                                        
+  Agency :                                                                                          Agency :                                                                                            
+  Version :                                                                                         Version :                                                                                           
+  Transaction Set :                                                                                 Transaction Set :                                                                                   
+  Release :                               65535                                                     Release :                                 65535                                                     
+  Functional Group :                                                                                Functional Group :                                                                                  
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+  INPUT Branching Diagram                                                                                                                                                                               
+  -----------------------                                                                                                                                                                               
+                                                                                                                                                                                                        
+                        Name                         M/C     Min Use      Max Use        Description                                                                                                    
+                                                                                                                                                                                                        
+  INPUT*                                              M               1           1                                                                                                                     
+     DATA*                                            C               0        9999                                                                                                                     
+                                                                                                                                                                                                        
+  OUTPUT Branching Diagram                                                                                                                                                                              
+  ------------------------                                                                                                                                                                              
+                                                                                                                                                                                                        
+                        Name                         M/C     Min Use      Max Use        Description                                                                                                    
+                                                                                                                                                                                                        
+  Element OUTPUT*                                     M               1           1                                                                                                                     
+     Element DATA*                                    C               0  4294967295 DATA                                                                                                                
+        Element NAME*                                 C               0           1 NAME                                                                                                                
+           Pcdata*                                    C               0           1                                                                                                                     
+        Element AMOUNT*                               C               0           1 AMOUNT                                                                                                              
+           Pcdata*                                    C               0           1                                                                                                                     
+        Element INVOICE*                              C               0           1 INVOICE                                                                                                             
+           Pcdata*                                    C               0           1                                                                                                                     
+        Element DATE*                                 C               0           1 DATE                                                                                                                
+           Pcdata*                                    C               0           1                                                                                                                     
+        Element CITY*                                 C               0           1 CITY                                                                                                                
+           Pcdata*                                    C               0           1                                                                                                                     
+                                                                                                                                                                                                        
+  INPUT Record Details                                                                                                                                                                                  
+  --------------------                                                                                                                                                                                  
+                                                                                                                                                                                                        
+  DATA*                                                                           Conditional                                           0          9999                                                 
+                                                                                                                                                                                                        
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------            
+  NAME*                                                                                         C         0      10 String        X                                                                     
+  AMOUNT*                                                                                       C         0      10 String        X                                                                     
+  INVOICE*                                                                                      C         0      10 String        X                                                                     
+  DATE*                                                                                         C         0      10 String        X                                                                     
+  CITY*                                                                                         C         0      20 String        X                                                                     
+                                                                                                                                                                                                        
+  OUTPUT Record Details                                                                                                                                                                                 
+  ---------------------                                                                                                                                                                                 
+                                                                                                                                                                                                        
+  Pcdata NAME*                                                                    Conditional                                           0             1                                                 
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------            
+                                                                                                C         0      10 String        X                                                                     
+                                                                                                                                                                                                        
+  Pcdata AMOUNT*                                                                  Conditional                                           0             1                                                 
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------            
+                                                                                                C         0      10 String        X                                                                     
+                                                                                                                                                                                                        
+  Pcdata INVOICE*                                                                 Conditional                                           0             1                                                 
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------            
+                                                                                                C         0      10 String        X                                                                     
+                                                                                                                                                                                                        
+  Pcdata DATE*                                                                    Conditional                                           0             1                                                 
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------            
+                                                                                                C         0      10 String        X                                                                     
+                                                                                                                                                                                                        
+  Pcdata CITY*                                                                    Conditional                                           0             1                                                 
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------            
+                                                                                                C         0      20 String        X                                                                     
+                                                                                                                                                                                                        
+  Mapping Information                                                                                                                                                                                   
+  -------------------                                                                                                                                                                                   
+                                                                                                                                                                                                        
+  Record DATA*                                                                                                                                                                                          
+  ------------                                                                                                                                                                                          
+  NAME*                                     ----->    NAME*                       PCDATA                                                                                                                
+  AMOUNT*                                   ----->    AMOUNT*                     PCDATA                                                                                                                
+  INVOICE*                                  ----->    INVOICE*                    PCDATA                                                                                                                
+  DATE*                                     ----->    DATE*                       PCDATA                                                                                                                
+  CITY*                                     ----->    CITY*                       PCDATA                                                                                                                
+                                                                                                                                                                                                        
+  Extended Rules                                                                                                                                                                                        
+  --------------                                                                                                                                                                                        
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        
+  Codelists                                                                                                                                                                                             
+  ---------                                                                                                                                                                                             
+                                                                                                                                                                                                        
